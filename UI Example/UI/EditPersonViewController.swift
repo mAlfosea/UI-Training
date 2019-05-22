@@ -18,23 +18,22 @@ class EditPersonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initiateUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         initiateUI()
     }
     
     func initiateUI() {
+        let userData = UserData()
         
-        registerUserDefault()
-        
-        let userRegistrationTemp = UserDefaults.standard.bool(forKey: "REGISTRATION")
+        let userRegistrationTemp = userData.registrationValue
         if userRegistrationTemp == false {
+            ui_title_label.text = "Bonjour"
             stack_user_infos.isHidden = true
             btn_edit_infos.isHidden = true
             view_first_conection.isHidden = false
-            initInscriptionView()
         } else {
             stack_user_infos.isHidden = false
             btn_edit_infos.isHidden = false
@@ -44,7 +43,9 @@ class EditPersonViewController: UIViewController {
     }
     
     func initUserInfos() {
-        _genre = UserDefaults.standard.integer(forKey: "GENRE")
+        let userData = UserData()
+        
+        _genre = userData.genreValue
         switch _genre {
         case 0:
             ui_genre_label.text = "Homme"
@@ -54,31 +55,14 @@ class EditPersonViewController: UIViewController {
             ui_genre_label.text = "Inconnu"
         }
         
-        if let nameTemp = UserDefaults.standard.string(forKey: "NAME") {
-            _name = nameTemp
-            ui_name_label.text = _name
-            ui_title_label.text = "Bonjour \(_name)"
-        }
+        _name = userData.nameValue
+        ui_name_label.text = _name
+        ui_title_label.text = "Bonjour \(_name)"
         
-        _age = UserDefaults.standard.integer(forKey: ("AGE"))
-        ui_age_label.text = String(_age)
+        _age = userData.ageValue
+        ui_age_label.text = "\(String(_age)) an(s)"
         
-        if let bioTemp = UserDefaults.standard.string(forKey: "BIOGRAPHY") {
-            _notes = bioTemp
-            ui_notes_view.text = _notes
-        }
-    }
-    
-    func initInscriptionView() {
-        
-    }
-    
-    func registerUserDefault(){
-        UserDefaults.standard.register(defaults: [
-            "AGE" : 0,
-            "GENRE" : 0,
-            "REGISTRATION": false])
-        
-        //UserDefaults.standard.set(false, forKey: "REGISTRATION")
+        _notes = userData.biographyValue
+        ui_notes_view.text = _notes
     }
 }
