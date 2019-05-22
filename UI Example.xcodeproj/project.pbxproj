@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84AFEAF52294275D002A5864 /* EditPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFEAF42294275D002A5864 /* EditPersonViewController.swift */; };
+		84AFEAF52294275D002A5864 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFEAF42294275D002A5864 /* MainViewController.swift */; };
 		84AFEAF722953CFB002A5864 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFEAF622953CFB002A5864 /* UserData.swift */; };
 		84AFEAF922956BC4002A5864 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFEAF822956BC4002A5864 /* Extensions.swift */; };
 		84B242502292A5160014C0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2424F2292A5160014C0D1 /* AppDelegate.swift */; };
-		84B242522292A5160014C0D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B242512292A5160014C0D1 /* ViewController.swift */; };
+		84B242522292A5160014C0D1 /* UserEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B242512292A5160014C0D1 /* UserEditViewController.swift */; };
 		84B242552292A5160014C0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B242532292A5160014C0D1 /* Main.storyboard */; };
 		84B242572292A5180014C0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B242562292A5180014C0D1 /* Assets.xcassets */; };
 		84B2425A2292A5180014C0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B242582292A5180014C0D1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84AFEAF42294275D002A5864 /* EditPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonViewController.swift; sourceTree = "<group>"; };
+		84AFEAF42294275D002A5864 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84AFEAF622953CFB002A5864 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		84AFEAF822956BC4002A5864 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		84B2424C2292A5160014C0D1 /* UI Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B2424F2292A5160014C0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84B242512292A5160014C0D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84B242512292A5160014C0D1 /* UserEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditViewController.swift; sourceTree = "<group>"; };
 		84B242542292A5160014C0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B242562292A5180014C0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B242592292A5180014C0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		84AFEAF3229421A6002A5864 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				84B242512292A5160014C0D1 /* ViewController.swift */,
-				84AFEAF42294275D002A5864 /* EditPersonViewController.swift */,
+				84B242512292A5160014C0D1 /* UserEditViewController.swift */,
+				84AFEAF42294275D002A5864 /* MainViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -153,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84AFEAF922956BC4002A5864 /* Extensions.swift in Sources */,
-				84AFEAF52294275D002A5864 /* EditPersonViewController.swift in Sources */,
-				84B242522292A5160014C0D1 /* ViewController.swift in Sources */,
+				84AFEAF52294275D002A5864 /* MainViewController.swift in Sources */,
+				84B242522292A5160014C0D1 /* UserEditViewController.swift in Sources */,
 				84AFEAF722953CFB002A5864 /* UserData.swift in Sources */,
 				84B242502292A5160014C0D1 /* AppDelegate.swift in Sources */,
 			);

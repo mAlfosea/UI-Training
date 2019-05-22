@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserEditViewController: UIViewController {
     
     var _biography: String = ""
     var _name: String = ""

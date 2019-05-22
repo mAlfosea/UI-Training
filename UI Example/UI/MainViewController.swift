@@ -1,6 +1,6 @@
 import UIKit
 
-class EditPersonViewController: UIViewController {
+class MainViewController: UIViewController {
     
     @IBOutlet weak var ui_title_label: UILabel!
     @IBOutlet weak var ui_genre_label: UILabel!
